@@ -1,4 +1,6 @@
+# ==============================
 # Logs
+# ==============================
 logs
 *.log
 npm-debug.log*
@@ -7,13 +9,17 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Dependencies
+# ==============================
+# Dependencies & Build
+# ==============================
 node_modules
 dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# ==============================
+# Editor / OS
+# ==============================
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -24,14 +30,19 @@ dist-ssr
 *.sln
 *.sw?
 
-# Environment Variables
-.env.local
-.env.*.local
+# ==============================
+# Environment Variables (MUY IMPORTANTE)
+# ==============================
+.env
+.env.*
+!.env.example  
 
-# Misc
-.DS_Store
+# ==============================
+# Secrets / Keys
+# ==============================
 *.pem
-npm-debug.log*
 
+# ==============================
 # Drizzle
+# ==============================
 drizzle/
